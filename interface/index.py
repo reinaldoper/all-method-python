@@ -33,8 +33,6 @@ class Rectangle(Shape):
     def perimeter(self):
         return 2 * (self.width + self.height)
 
-# Testando as classes
-
 
 circle = Circle(5)
 rectangle = Rectangle(4, 6)

@@ -28,7 +28,8 @@ data = [
     ("Monty Python's Life of Brian", 1979, 8.0),
 ]
 
-cur.executemany("INSERT INTO movie (title, year, score) VALUES (?, ?, ?)", data)
+cur.executemany("INSERT INTO movie (title, year, score) VALUES (?, ?, ?)",
+                data)
 con.commit()
 
 for row in cur.execute("SELECT year, title FROM movie ORDER BY year"):
